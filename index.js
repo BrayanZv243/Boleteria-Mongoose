@@ -4,6 +4,7 @@ const UsuarioDAO = require('./dataAccess/usuarioDAO');
 db.conectar()
     .then(async () => {
         try {
+            /*
             const nuevoUsuario = {
                 nombre: 'Brayan',
                 apellido: 'Zavala',
@@ -16,6 +17,8 @@ db.conectar()
 
             await UsuarioDAO.crearUsuario(nuevoUsuario);
             console.log('Usuario creado');
+            */
+            
             console.log('Obtenemos los usuarios: ')
 
             const usuario = await UsuarioDAO.obtenerUsuarios();
