@@ -5,6 +5,10 @@ const carritoCompraSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario',
     },
+    boletos: [{ 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Boleto' 
+    }],
     total: Number,
 });
 

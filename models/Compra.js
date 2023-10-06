@@ -9,7 +9,10 @@ const compraSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Evento',
     },
-    total: Number,
+    boletos: [{
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Boleto' }
+    ],
 });
 
 module.exports = mongoose.model('Compra', compraSchema);
